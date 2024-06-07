@@ -28,9 +28,22 @@ Installation
                 source venv/bin/activate  # On Windows use `venv\Scripts\activate
           3.Install the dependencies
                 pip install -r requirements.txt
-          
+          4.install requests
+                 pip install requests
+
           5.fetch api data by run below command 
-                  python3 manage.py fetch_
+                  python3 manage.py fetch_codes.py
+          6.Apply migrations
+              python3 manage.py makemigrations
+              python3 manage.py migrate
+          7.Create a superuser 
+               python manage.py createsuperuser
+          8.python manage.py runserver
+                The application will be available at http://127.0.0.1:8000
+                homescreen -> http://127.0.0.1:8000/home/
+                
+               
+
 
                 
                 
